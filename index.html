@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Planos</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+	</head>
+	<body>
+	    <header class="menu container">
+            <div class="grid-5 logo">
+                Plan<span class="emphasis">A</span>
+            </div>
+	        <nav class="grid-11">
+	            <ul>
+	                <li class="active">
+	                    <a href="#">Planos</a>
+	                </li>
+	                <li>
+	                    <a href="#">Serviços</a>
+	                </li>
+	                <li>
+	                    <a href="#">Contato</a>
+	                </li>
+	                <li>
+	                    <a href="#" onclick="toggleDarkMode()">
+	                        <svg class="icon-expand" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"/>
+                                <path id="on" fill="tomato" d="M11 22a.998.998 0 01-1-1v-7H5a1 1 0 01-.78-1.625l8-10A1 1 0 0114 3v7h5a1 1 0 01.78 1.625l-8 10A.997.997 0 0111 22zM7.081 12H11a1 1 0 011 1v5.15L16.919 12H13a1 1 0 01-1-1V5.851L7.081 12z"/>
+                                <path id="off" class="d-none" fill="tomato" d="M16.229 12h.706l-.313.392 1.423 1.423 1.752-2.19A1.002 1.002 0 0019.015 10h-4.786l2 2zM4.707 3.308L3.293 4.722l3.925 3.924-2.983 3.729A1 1 0 005.015 14h5v7a.998.998 0 001 1 1 1 0 00.781-.375l3.733-4.667 3.764 3.764 1.414-1.414-16-16zM7.096 12l1.545-1.931L10.571 12H7.096zm4.919 6.15v-4.707l2.091 2.092-2.091 2.615zM11.155 6.926l.86-1.075v1.936l2 2V3a.998.998 0 00-.669-.943.998.998 0 00-1.112.318L9.732 5.503l1.423 1.423z"/>
+                            </svg>
+	                    </a>
+	                </li>
+	            </ul>
+	        </nav>
+	    </header>
+		<section class="planos">
+			<h1>PLANOS DISPONÍVEIS</h1>
+			<p class="subtitulo">Escolha a melhor opção para você</p>
+			<br>
+			<div class="container menu">
+				<div class="planos-item grid-5 silver">
+					<div class="planos-nome">
+						<h2>Mensal</h2>
+						<span><sup>R$</sup>29</span>
+					</div>	    
+					<ul>
+						<li>Um pouco disso</li>
+						<li>Um pouco daquilo</li>
+						<li>Mais um pouco</li>
+					</ul>
+					<a href="#" class="btn">Inscreva-se</a>
+				</div>
+				<div class="planos-item grid-5">
+					<div class="planos-nome">
+						<h2>Anual</h2>
+						<span><sup>R$</sup>149</span>
+					</div>
+					<p class="recomendado">Recomendado</p>	    
+					<ul>
+						<li>Um pouco disso</li>
+						<li>Um pouco daquilo</li>
+						<li>Mais um pouco</li>
+						<li>Acesso ilimitado</li>
+						<li>Mais serviços</li>
+					</ul>
+					<a href="#" class="btn">Inscreva-se</a>
+				</div>
+			</div>
+		</section>
+		<script>
+        function toggleDarkMode(){
+            var elem = document.body;
+            var on = document.getElementById('on');
+            var off = document.getElementById('off');
+            
+            elem.classList.toggle("dark-mode-on");
+            on.classList.toggle('d-none');
+            off.classList.toggle('d-block');
+        }
+        </script>		
+	</body>
+</html>

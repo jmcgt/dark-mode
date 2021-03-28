@@ -1,0 +1,183 @@
+.dark-mode-on{
+    filter: invert(1) hue-rotate(180deg);
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.menu{
+    padding: 20px 0;
+}
+
+.menu nav ul{
+    margin-top: 5px;
+    text-align: right;
+}
+
+.menu nav ul li
+{
+    display: inline-block;
+}
+
+.logo{
+    font-family: "Libre Baskerville", serif;
+    font-style: italic;
+    font-size: 2em;
+    color: rgb(136, 68, 238);
+}
+
+.logo .emphasis{
+    font-style: normal;
+    color: tomato;
+    font-weight: 700;
+}
+
+.menu nav ul li a{
+    padding: 10px;
+    text-transform: uppercase;
+    color: rgb(168, 168, 173);
+}
+
+nav li.active{
+    position: relative;
+}
+
+nav li.active::after{
+    content: '';
+    background: rgb(136, 68, 238);
+    height: 6px;
+    width: 100%;
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
+
+/* planos */
+
+.planos{
+    margin-bottom: 300px;
+    background: url('../img/fundo.png'), rgb(172, 168, 247);
+}
+
+.planos .container{
+    max-width: 600px;
+}
+
+.planos h1{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    padding: 80px 0px 20px;
+}
+
+.planos h1::after{
+    content: '';
+    display: block;
+    width: 180px;
+    background: white;
+    height: 2px;
+    margin: 10px auto 0 auto;
+}
+
+.planos .subtitulo
+{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+.planos-item{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 10px 0px;
+    padding-bottom: 20px;
+    background: white;
+    border-radius: 5px;
+}
+
+@media (min-width: 992px){
+	.planos-item {
+		margin-bottom: -220px;
+	}
+}
+
+.silver{
+    margin-top: 60px;
+}
+
+.planos-nome{
+    font-size: 1.8em;
+    color: white;
+    background: linear-gradient(0deg, rgb(136, 68, 238) 0%, rgb(124, 85, 255) 100%);
+    border-radius: 5px 5px 0px 0px;
+    padding: 20px;
+}
+
+.planos-nome h2{
+    display: inline-block;
+}
+
+.planos-nome span{
+    float: right;
+}
+
+.planos-nome sup{
+    font-size: .6em;
+}
+
+.planos-item ul{
+    padding: 20px;
+}
+
+.planos-item ul li{
+    font-size: 1.3em;
+    color: rgb(168, 168, 173);
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(136, 68, 238);
+}
+
+.planos-item ul li::before{
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' class='check' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3e%3cpath d='M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z' fill='%23558dfc'/%3e%3c/svg%3e");
+    margin-right: 12px;
+}
+
+.recomendado{
+    font-size: 1.2em;
+    display: block;
+    width: 160px;
+    color: white;
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    padding: 6px;
+    border-radius: 2px;
+    background: tomato;
+    margin: -15px auto;
+}
+
+.btn{
+    font-size: 1.3em;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 2px 0px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background: rgb(85, 141, 252);
+    border-radius: 5px;
+    padding: 16px 0px 12px;
+    margin: 0px 20px;
+}
